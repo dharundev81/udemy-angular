@@ -1,0 +1,9 @@
+
+<p [ngStyle]="{backgroundcolor: getColor()}">{{'Server'}} No {{id}} is {{ getstate() }}</p>
+
+<input type="button" class="btn btn-primary" (click)="onList()" value="Date">
+
+<div *ngFor= "let logitem of log">
+    {{logitem}}
+</div>
+<!-- <p>{{'Server'}} No {{id}} is {{ getstate() }}</p> -->
